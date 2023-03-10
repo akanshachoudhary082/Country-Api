@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+     font-family: "nuino sans",sans-serif;
+}
+.container-1{
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 17px;
+}
+button{
+    outline:none;
+    border: 0;
+    background: transparent;
+}
+.toggle{
+    font-size: 18px;
+    cursor:pointer;
+
+}
+.toggle i{
+    padding-right: 5px;
+}
+.country-container,.filtered-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-fields{
+    text-align: center;
+    margin:1rem;
+    width:400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  
+}
+
+.filter-fields input{
+    width: 100%;
+    padding:17px;
+    outline: 0;
+    border:0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.filter-fields i{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    cursor:pointer;
+}
+.card{
+   /* border:2px solid rgb(63, 47, 47);*/
+   height: 330px;
+   padding: 27px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+}
+.card img{
+    width: 248px;
+    height: 170px;
+}
+.card h3{
+    margin-top: 5px;
+}
+.card p1{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.card p2{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.tag{
+    display: flex;
+    background-color: blueviolet;
+    padding: 0.3rem;
+    color:white;
+    border-radius: 0.8rem;
+}
+
+.hide{
+    display: none;
+}
+
+/*-----------------------------------1140px----------------------*/
+
+
+/*----------------------------------575px-------------------------*/
+
+@media(max-width:575px){
+    .container-1{
+        width:100%;
+    }
+    .filter-fields{
+        width: 270px;
+    }
+    .card{
+        margin-left: 50px;
+        
+    }
+}
